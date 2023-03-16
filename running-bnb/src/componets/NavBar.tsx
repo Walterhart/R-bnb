@@ -1,9 +1,10 @@
 import React from "react";
-const NavBar = () => {
+
+const NavBar: React.FC = () => {
     return ( 
     <div className="nav-bar">
         <nav>
-            <img src= "/run.jpg" alt="running-BnB" />
+            <img src= "./images/run.jpg" alt="running-BnB" />
             <h1>R-BnB</h1>
         </nav>
      </div>

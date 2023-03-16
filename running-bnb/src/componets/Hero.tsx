@@ -1,12 +1,12 @@
 const Hero:  React.FC = () => {
     return (  
-        <div className="hero">
-        <img src="/activities.png" alt="activities" />
+        <section className="hero">
+        <img src={process.env.PUBLIC_URL + 'images/activities.png'} alt="Activities" />
         <h1>Online Experiences</h1>
         <p>
-            Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
+            Join unique interactive activities that wil improve your lifestyle.
         </p>
-        </div>
+        </section>
     );
 }
  
