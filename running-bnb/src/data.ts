@@ -24,7 +24,7 @@ export default [
             rating: 4.5,
             reviewCount: 40
         },
-        location: "Online",
+        location: "Cleveland",
         openSpots: 27,
     },
     {
@@ -39,6 +39,6 @@ export default [
             reviewCount: 3
         },
         location: "Online",
-        openSpots: 6,
+        openSpots: 0,
     }
 ]
