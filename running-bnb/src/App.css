@@ -57,6 +57,7 @@ section{
   display: flex;          
   flex-direction: column; 
   position: relative;
+  
 }
 
 .card-stats{
@@ -68,12 +69,12 @@ section{
   border-radius:9px
 }
 
-.card--title {
+.card-title {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.card--price {
+.card-price {
   margin-top: auto;
 }
 
@@ -82,6 +83,13 @@ section{
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
+  text-align: center;
+
+}
+
+.card-description{
+  word-spacing: normal;
+  
 }
 
 .open-close  {

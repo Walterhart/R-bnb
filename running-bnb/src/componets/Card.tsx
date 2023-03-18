@@ -34,9 +34,9 @@ const Card: React.FC<Props> = (props) => {
         <span className='fade'>({props.stats.reviewCount}) •</span>
         <span className='fade'>{props.location}</span>
       </div>
-        <p className="card--title"> {props.title }</p>
-        <p> {props.description}</p>
-        <p> <span className='bold card--price'>${props.price}</span> per person </p>
+        <p className="card-title"> {props.title }</p>
+        <p> <span className='card-description'>{props.description}</span></p>
+        <p> <span className='bold card-price'>${props.price}</span> per person </p>
       </div>
   )
 }

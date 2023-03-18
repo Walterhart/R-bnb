@@ -30,7 +30,7 @@ export default [
     {
         id: 3,
         title: "Learn art",
-        description: "Never had a chance to get into art?  This class will teach you the basics to the advance of drawing perfect art.",
+        description: "Never had a chance to get into art? This class will teach you the basics to the advance of drawing perfect art.",
         price: 60,
         coverImg: "art.jpeg",
         alt: 'expression',
