@@ -7,9 +7,11 @@ import data from './data'
 import { CardInterface } from './models/card-model';
 
 const App: React.FC = () => {
-  const cards = data.map((card) => {
+  const cards = data.map((card: CardInterface) => {
     return ( <Card
+      key = {card.id}
       img = {card.coverImg}
+      alt = {card.alt}
       rating = {card.stats.rating}
       reviewCount = {card.stats.reviewCount}
       location ={card.location}
@@ -25,10 +27,11 @@ const App: React.FC = () => {
         <NavBar/>
       </header>
       <main>
-        <Hero/>
-       
+        <Hero/>  
+        <section className="cards-list">
+        {cards}
+        </section>
       </main>
-
     </div>
   );
 }

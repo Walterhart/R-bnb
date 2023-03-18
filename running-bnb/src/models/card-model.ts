@@ -4,6 +4,7 @@ export interface CardInterface{
     description: string,
     price: number,
     coverImg: string,
+    alt: string,
     stats: {
             rating: number,
             reviewCount: number

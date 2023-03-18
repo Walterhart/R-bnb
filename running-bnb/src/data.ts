@@ -1,10 +1,11 @@
 export default [
     {
         id: 1,
-        title: "Learn How To express Yourself",
+        title: "Learn How To Express Yourself",
         description: "Sometimes it is hard to express yourself. This class will let anyone know how you feel.",
         price: 20,
-        coverImg: "express.png",
+        coverImg: "sing.jpg",
+        alt: 'expression',
         stats: {
             rating: 4.0,
             reviewCount: 12
@@ -17,7 +18,8 @@ export default [
         title: "Learn Photography",
         description: "Interested in becoming a photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave memories that'll last a lifetime.",
         price: 45,
-        coverImg: "photography.png",
+        coverImg: "picture.jpeg",
+        alt: 'expression',
         stats: {
             rating: 4.5,
             reviewCount: 40
@@ -30,7 +32,8 @@ export default [
         title: "Learn art",
         description: "Never had a chance to get into art?  Join us for a unique experience that will teach you the basics to the advance of drawing perfect art.",
         price: 60,
-        coverImg: "art.png",
+        coverImg: "art.jpeg",
+        alt: 'expression',
         stats: {
             rating: 4.2,
             reviewCount: 3
