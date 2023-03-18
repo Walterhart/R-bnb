@@ -2,12 +2,15 @@ import React from 'react'
 import { BsStarFill } from "react-icons/bs";
 
 interface Props{
-  img: string,
+  coverImg: string,
   alt: string,
-  rating: number,
-  reviewCount: number,
+  stats: {
+    rating: number,
+    reviewCount: number
+}
   location: string,
   title: string,
+  description: string,
   price: number,
   openSpots: number,
 }
@@ -24,13 +27,15 @@ const Card: React.FC<Props> = (props) => {
   return (
     <div className='card'>
      {openStatusText && <div className='open-close'>{openStatusText} </div>}
-      <img src={process.env.PUBLIC_URL + `/images/${props.img}`} alt={props.alt}  className='card-image'/>
+     {props.location ===  'ONLINE'  && <div className='open-close'>{openStatusText} </div>}
+      <img src={process.env.PUBLIC_URL + `/images/${props.coverImg}`} alt={props.alt}  className='card-image'/>
       <div className='card-stats'>
-        <span >< BsStarFill/>{props.rating}</span>
-        <span className='fade'>({props.reviewCount}) •</span>
+        <span >< BsStarFill/>{props.stats.rating}</span>
+        <span className='fade'>({props.stats.reviewCount}) •</span>
         <span className='fade'>{props.location}</span>
       </div>
         <p className="card--title"> {props.title }</p>
+        <p> {props.description}</p>
         <p> <span className='bold card--price'>${props.price}</span> per person </p>
       </div>
   )

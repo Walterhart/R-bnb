@@ -16,7 +16,7 @@ export default [
     {
         id: 2,
         title: "Learn Photography",
-        description: "Interested in becoming a photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave memories that'll last a lifetime.",
+        description: "Interested in becoming a photographer? For beginner and experienced alike, join us in learning techniques required to leave memories that'll last a lifetime.",
         price: 45,
         coverImg: "picture.jpeg",
         alt: 'expression',
@@ -30,7 +30,7 @@ export default [
     {
         id: 3,
         title: "Learn art",
-        description: "Never had a chance to get into art?  Join us for a unique experience that will teach you the basics to the advance of drawing perfect art.",
+        description: "Never had a chance to get into art?  This class will teach you the basics to the advance of drawing perfect art.",
         price: 60,
         coverImg: "art.jpeg",
         alt: 'expression',
